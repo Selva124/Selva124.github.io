@@ -1,0 +1,56 @@
+#welcome{
+	font-family: sans-serif;
+	transform: scale(1.0);
+}
+
+#faq{
+	font-family: sans-serif;
+	transform: scale(1.0);
+}
+
+#faqpage{
+	font-family: sans-serif;
+	font-size: 15px;
+	color: blue;
+	text-align: center;
+}
+
+#faqpage:hover{
+	color: deepskyblue;
+}
+
+#questions{
+	border-style: solid;
+	border-radius: 10px;
+	font-family: sans-serif;
+}
+
+#homepage{
+	width: 33px;
+	height: 36px;
+	position: sticky;
+	left: 1300px;
+	bottom: 1000px;
+}
+
+#homepage:hover{
+	color: darkred;
+}
+
+#homepage2{
+	width: 33px;
+	height: 36px;
+	position: sticky;
+	left: 1300px;
+	bottom: 1000px;
+}
+
+#questionmark{
+	width: 33px;
+	height: 34px;
+	position: sticky;
+	left: 1245px;
+	bottom: 795px;
+}
+
+
