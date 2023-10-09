@@ -1,15 +1,41 @@
 body {
-	height: 100vh;
-	height: -webkit-fill-available;
+  height: 100dvh;
+  height: -webkit-fill-available;
 }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* sex */
+}
+
+/* sex */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  /* sex */
+  max-width: 1110px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sex {
+  margin-top: 2rem;
 }
 
 .bg-image {
   /* The image used */
-  background-image: url("");
+  /* background-image: url(""); */
 
   /* Add the blur effect */
   filter: blur(8px);
@@ -26,150 +52,157 @@ body {
 
 /* Position text in the middle of the page/image */
 .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   font-family: sans-serif;
   text-shadow: 0px 2px 2px black;
   border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 50%;
-  padding: 10px;
+  width: 100%;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
 /* the faq text thats showen in the top */
 
-#faq{
-	font-family: sans-serif;
-	transform: scale(1.0);
+#faq {
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 /* the questions that people ask in faq */
+/* sex */
+#questions {
+  border-style: solid;
+  border-radius: 10px;
+  font-family: sans-serif;
+  padding: 1.25rem 0;
+  list-style: none;
+}
 
-#questions{
-	border-style: solid;
-	border-radius: 10px;
-	font-family: sans-serif;
+#questions li {
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#questions li.last {
+  /* for it to dont have excessive space */
+  margin-bottom: 0;
+}
+
+#questions li details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5rem 0.5rem 0;
+}
+
+#questions li details summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+#questions li details[open] {
+  border-bottom: 1px solid #aaa;
+  padding: 0.5rem;
+}
+
+#questions li details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5rem;
+}
+
+/* sex */
+.links {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.links a:first-child {
+  margin-right: 1rem;
 }
 
 /* home icon */
 
-.homepage{
-	border: 2px solid black;
-	border-radius: 10px;
-	width: 33px;
-	position: absolute;
-	left: 1300px;
-	bottom: 92%;
-	padding: 5px 5px;
-	transition-duration: 0.5s;
+.homepage {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 33px;
+  padding: 5px 5px;
+  transition-duration: 0.5s;
 }
 
 /* faq icon */
 
-#questionmark{
-	border: 2px solid black;
-	border-radius: 10px;
-	width: 33px;
-	position: absolute;
-	left: 1245px;
-	bottom: 92%;
-	padding: 5px 5px;
-	transition-duration: 0.5s;
+#questionmark {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 33px;
+  padding: 5px 5px;
+  transition-duration: 0.5s;
 }
 
-#questionmark:hover{
-	border: 2px solid;
-	border-color: slategrey;
-	border-radius: 30px;
-	position: absolute;
-	padding: 5px 5px;
-	transition-duration: 0.5s;
+#questionmark:hover {
+  border: 2px solid;
+  border-color: slategrey;
+  border-radius: 30px;
+  padding: 5px 5px;
+  transition-duration: 0.5s;
 }
 
-#homepage:hover{
-	border: 2px solid black;
-	border-color: slategrey;
-	border-radius: 30px;
-	position: absolute;
-	padding: 5px 5px;
-	transition-duration: 0.5s;
+#homepage:hover {
+  border: 2px solid black;
+  border-color: slategrey;
+  border-radius: 30px;
+  padding: 5px 5px;
+  transition-duration: 0.5s;
 }
 
-#homepage2:hover{
-	border: 2px solid black;
-	border-color: slategrey;
-	border-radius: 30px;
-	position: absolute;
-	padding: 5px 5px;
-	transition-duration: 0.5s;
+#homepage2:hover {
+  border: 2px solid black;
+  border-color: slategrey;
+  border-radius: 30px;
+  padding: 5px 5px;
+  transition-duration: 0.5s;
 }
 
 @media only screen and (max-width: 400px) {
-	.bg-text {
-
-  	width: 95%;
-  	height: 25%;
-  	position: absolute;
-  	padding: 10px;
-  	text-align: center;
-  	top: 20%;
-  	left: 50%;
-
+  .bg-text {
+    width: 95%;
+    height: 25%;
+    padding: 10px;
+    text-align: center;
   }
 
-}
+  #questionmark {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 33px;
+    padding: 5px 5px;
+    transition-duration: 0.5s;
+  }
 
-@media only screen and (max-width: 400px) {
-	#questionmark{
+  .homepage {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 33px;
+    padding: 5px 5px;
+    transition-duration: 0.5s;
+  }
 
-	border: 2px solid black;
-	border-radius: 10px;
-	width: 33px;
-	position: absolute;
-	left: 35%;
-	bottom: 94%;
-	padding: 5px 5px;
-	transition-duration: 0.5s;
-
-	}
-
-}
-
-@media only screen and (max-width: 400px) {
-	.homepage{
-
-	border: 2px solid black;
-	border-radius: 10px;
-	width: 33px;
-	position: absolute;
-	left: 60%;
-	bottom: 94%;
-	padding: 5px 5px;
-	transition-duration: 0.5s;
-
-	}
-
-}
-
-@media only screen and (max-width: 400px) {
-	#homepage2{
-
-	border: 2px solid black;
-	border-radius: 10px;
-	width: 33px;
-	position: absolute;
-	left: 89%;
-	bottom: 93%;
-	padding: 5px 5px;
-	transition-duration: 0.5s;
-
-	}
-
+  #homepage2 {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 33px;
+    left: 89%;
+    bottom: 93%;
+    padding: 5px 5px;
+    transition-duration: 0.5s;
+  }
 }
