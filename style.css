@@ -1,208 +1,54 @@
+html,
 body {
-  height: 100dvh;
-  height: -webkit-fill-available;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* sex */
 }
 
-/* sex */
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  /* sex */
-  max-width: 1110px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sex {
-  margin-top: 2rem;
-}
-
-.bg-image {
-  /* The image used */
-  /* background-image: url(""); */
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  font-family: sans-serif;
-  text-shadow: 0px 2px 2px black;
-  border: 3px solid #f1f1f1;
-  width: 100%;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-/* the faq text thats showen in the top */
-
-#faq {
-  font-family: sans-serif;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-/* the questions that people ask in faq */
-/* sex */
-#questions {
-  border-style: solid;
-  border-radius: 10px;
-  font-family: sans-serif;
-  padding: 1.25rem 0;
-  list-style: none;
-}
-
-#questions li {
-  padding: 0 0.5rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-#questions li.last {
-  /* for it to dont have excessive space */
-  margin-bottom: 0;
-}
-
-#questions li details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 0.5rem 0.5rem 0;
-}
-
-#questions li details summary {
-  cursor: pointer;
-  font-weight: bold;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
-}
-
-#questions li details[open] {
-  border-bottom: 1px solid #aaa;
-  padding: 0.5rem;
-}
-
-#questions li details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 0.5rem;
-}
-
-/* sex */
-.links {
+body {
   display: flex;
-  justify-content: end;
-  width: 100%;
-  margin-bottom: 2rem;
+  align-items: center;
+  height: 100vh;
 }
 
-.links a:first-child {
-  margin-right: 1rem;
+hr {
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
 }
 
-/* home icon */
+#container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1108px !important;
+  min-width: 320px;
+}
 
-.homepage {
+#parentDiv {
+  border: 4px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#parentDiv #imgDiv {
+  text-align: center;
+}
+
+#parentDiv img {
+  max-width: 100%;
   border: 2px solid black;
-  border-radius: 10px;
-  width: 33px;
-  padding: 5px 5px;
-  transition-duration: 0.5s;
+  width: 200px;
 }
 
-/* faq icon */
-
-#questionmark {
-  border: 2px solid black;
-  border-radius: 10px;
-  width: 33px;
-  padding: 5px 5px;
-  transition-duration: 0.5s;
+#parentDiv #paragraph {
+  font-weight: 800;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 
-#questionmark:hover {
-  border: 2px solid;
-  border-color: slategrey;
-  border-radius: 30px;
-  padding: 5px 5px;
-  transition-duration: 0.5s;
-}
-
-#homepage:hover {
-  border: 2px solid black;
-  border-color: slategrey;
-  border-radius: 30px;
-  padding: 5px 5px;
-  transition-duration: 0.5s;
-}
-
-#homepage2:hover {
-  border: 2px solid black;
-  border-color: slategrey;
-  border-radius: 30px;
-  padding: 5px 5px;
-  transition-duration: 0.5s;
-}
-
-@media only screen and (max-width: 400px) {
-  .bg-text {
-    width: 95%;
-    height: 25%;
-    padding: 10px;
-    text-align: center;
-  }
-
-  #questionmark {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 33px;
-    padding: 5px 5px;
-    transition-duration: 0.5s;
-  }
-
-  .homepage {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 33px;
-    padding: 5px 5px;
-    transition-duration: 0.5s;
-  }
-
-  #homepage2 {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 33px;
-    left: 89%;
-    bottom: 93%;
-    padding: 5px 5px;
-    transition-duration: 0.5s;
-  }
+#parentDiv #title {
+  padding-left: 20px;
+  text-decoration: underline;
 }
